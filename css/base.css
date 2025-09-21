@@ -10,5 +10,5 @@ body {
 
 .box {
   border: 0.25rem solid white; /* 4px → 0.25rem */
-  padding: 1.5rem;              /* space inside the box */
+  padding: 1rem;              /* space inside the box */
 }
