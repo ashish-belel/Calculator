@@ -1,17 +1,27 @@
-/* Display padding */
+/* Display styling */
 .disp {
-  padding: 4rem 8rem;
-  /* previously 64px 141px */
+  display: block;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;       /* horizontal padding only */
+  border: 1px solid white;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  box-sizing: border-box;
+  overflow-x: auto;      /* horizontal scroll */
+  white-space: nowrap;   /* prevent wrapping */
 }
 
-/* Sections and grid layout */
-section {
+
+
+/* divs and grid layout */
+div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 0.625rem;
-  /* 10px → 0.625rem */
-  margin-bottom: 0.625rem;
-  /* 10px → 0.625rem */
+  column-gap: 0.625rem;          /* 10px → 0.625rem */
+  margin-bottom: 0.625rem;       /* 10px → 0.625rem */
+  align-items: center;           /* vertically center content */
 }
 
 /* ---------------- Mobile responsiveness ---------------- */
@@ -19,29 +29,25 @@ section {
 /* Typical mobile screens <= 480px */
 @media screen and (max-width: 480px) {
   .box {
-    padding: 0.8rem;
-    /* smaller box padding */
+    padding: 0.8rem; /* smaller box padding */
   }
 
   .disp {
-    padding: 1.5rem 0.5rem;
-    /* smaller display padding */
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 0.5rem;
     font-size: 1.25rem;
-    /* smaller display text */
   }
 
-  section {
+  div {
     column-gap: 0.4rem;
-    /* smaller gap between buttons */
     margin-bottom: 0.4rem;
     grid-template-columns: repeat(4, 1fr);
   }
 
   .but {
     font-size: 1.1rem;
-    /* smaller button text */
     padding: 0.4rem;
-    /* smaller buttons */
   }
 
   .op {
@@ -50,14 +56,15 @@ section {
 
   #bC {
     font-size: 0.95rem;
-    /* Clear button */
   }
 }
 
 /* Extra-small screens <= 360px */
 @media screen and (max-width: 360px) {
   .disp {
-    padding: 1rem 0.3rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 0.4rem;
     font-size: 1rem;
   }
 
