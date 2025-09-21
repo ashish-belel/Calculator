@@ -1,0 +1,16 @@
+.but {
+  padding: 0.625rem; /* 10px → 0.625rem */
+  border: none;
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 1.625rem; /* 26px → 1.625rem */
+}
+
+.op {
+  background-color: rgb(254, 160, 10);
+}
+
+#bC {
+  font-size: 1.0625rem; /* 17px → 1.0625rem */
+}

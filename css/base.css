@@ -1,0 +1,14 @@
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  justify-items: center;
+}
+
+.box {
+  border: 0.25rem solid white; /* 4px → 0.25rem */
+  padding: 1.5rem;              /* space inside the box */
+}

@@ -1,0 +1,10 @@
+.disp {
+  padding: 4rem 8rem; /* previously 64px 141px */
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.625rem; /* 10px → 0.625rem */
+  margin-bottom: 0.625rem; /* 10px → 0.625rem */
+}
